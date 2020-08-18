@@ -1,0 +1,59 @@
+{
+  contracts: [
+    {
+      contractName: 'Boats',
+      systemName: 'BoatSystem',
+      fields: [
+        {
+          name: 'boatOwner',
+          ID: 'BO',
+          businessEntity: 'Boats',
+          definition: 'Owner of the boat'
+        },
+        {
+          name: 'boatRegion',
+          ID: 'BR',
+          businessEntity: 'Boats',
+          definition: 'Region of the boat'
+        },
+        {
+          name: 'boatDockingPriveleges',
+          ID: 'BDP',
+          businessEntity: 'Boats',
+          definition: 'Places a boat can dock'
+        },
+        {
+          name: 'dockIDs',
+          ID: 'DID',
+          businessEntity: 'Boats',
+          definition: 'Docks that the boat can dock in'
+        }
+        ]
+    },
+    {
+      contractName: 'WikiPages',
+      systemName: 'WikiPageSystem',
+      fields: [
+        {
+          name: 'pageOwner',
+          ID: 'PO',
+          businessEntity: 'WikiPages',
+          definition: 'Owner of the wikipage'
+        },
+        {
+          name: 'wikiURL',
+          ID: 'wURL',
+          businessEntity: 'WikiPages',
+          definition: 'URL of the wikipage'
+        },
+        {
+          name: 'wikiAccessOwners',
+          ID: 'WAO',
+          businessEntity: 'WikiPages',
+          definition: 'Description of who can access this page'
+        }
+        ]
+    }
+  ]
+}
+
